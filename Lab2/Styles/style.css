@@ -1,13 +1,13 @@
 body {
-  margins:auto;
+  margin:auto;
   width:80%;
 }
 
 header, section, article, nav, aside, footer, div {
   font-family: sans-serif;
   border: 1px dotted #000;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .BlogPost {
@@ -15,4 +15,30 @@ header, section, article, nav, aside, footer, div {
 }
 #PageContent {
   border: 1px dotted red;
+}
+
+#SiteTitle {
+  text-align: center;
+  float: right;
+  /* position: absolute; */
+}
+
+ul {
+  text-decoration: none;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  text-decoration: none;
+}
+
+#SiteNavigation li a {
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px 10px 50px;
+  text-decoration: none;
 }
