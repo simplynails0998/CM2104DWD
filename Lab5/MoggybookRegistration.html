@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Moggybook</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <script>
+      function testResults(form) {
+        // simple script to pop-up form values after submission
+        // grab form element values and store as variables
+        var username = form.username.value;
+        // repeat above for all the form elements used
+        var breed = form.breed.value;
+        var email = form.email.value;
+        var homepage = form.homepage.value;
+        var dob = form.dob.value;
+        var about = form.about.value;
+
+        // complete alert message popup by appending variables
+        alert("You registered: " + username + ", " + breed + ", " + email + ", " + homepage + ", " + dob + ", " + about);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Moggybook!</h1>
+    <form>
+      <table border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td>Username:</td>
+          <td>
+            <input type="textarea" name="username">
+          </td>
+        </tr>
+        <tr>
+          <td>Breed:</td>
+          <td>
+            <input type="textarea" name="breed">
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input type="textarea" name="email">
+          </td>
+        </tr>
+        <tr>
+          <td>Homepage:</td>
+          <td>
+            <input type="textarea" name="homepage">
+          </td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td>
+            <input type="textarea" name="dob">
+          </td>
+        </tr>
+        <tr>
+          <td>About:</td>
+          <td>
+            <input type="textarea" name="about">
+          </td>
+        </tr>
+      </table>
+      <input type="submit" name="submit" value="Submit" onClick="testResults(this.form)"/>
+    </form>
+  </body>
+</html>
