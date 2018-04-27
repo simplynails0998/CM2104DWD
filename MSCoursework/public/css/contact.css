@@ -1,0 +1,133 @@
+
+/* public/css/contact.css */
+/* CSS for Contact Page */
+
+body,header, section, article, nav, aside,
+footer, div {
+}
+
+
+/*#SiteTitle {float: right;}*/
+
+/*#SiteLogo {float: left;*/
+           /*width: 10%;*/
+           /*heith: 10emp}*/
+
+
+/*Page Title*/
+#title {
+    /*float: left;*/
+    /*margin-left: 14px;*/
+    /*padding-top: 20px;*/
+    /*padding-right: 30px;*/
+    /*padding-bottom: 80px;*/
+    /*padding-left: 800px;*/
+    font-family: Rockwell;
+    color: #0B486B;
+}
+
+
+
+/*#PageContent {float:inherit;}*/
+
+/*#landscape {float:inherit;*/
+            /*height: 50%;*/
+            /*widht: 100%;}*/
+
+#form {
+    display: inline-block;
+       /*padding: 620px;*/
+       /*padding-top: 0px;*/
+       /*padding-bottom: 0px;*/
+       text-align: left;
+       /*justify-content: space-between;*/
+       color: #0B486B;
+       font-family: Rockwell, sans-serif;}
+       /*input {width: 200%;}*/
+
+#form table {
+    width: 100%;
+}
+
+#form table tr td input {
+    /*width: 300px;*/
+}
+
+#Button {
+    display: inline-block;
+    /*padding: 260px;*/
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*
+#textarea {
+    height: 100px;
+    padding: 0;
+}
+*/
+
+#message {
+    text-align: left;
+    /*width: 300px;*/
+    resize: none;
+    /*margin: auto;*/
+    /*line-height: 0.5;*/
+}
+
+@media only screen and (min-width: 517px) {
+    #message,
+    #form table tr td input {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 516px) {
+    #form {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #form table {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #form table tr {
+        width: auto;
+    }
+
+    #message,
+    #form table tr input {
+        width: 100% !important;
+    }
+
+    #Button {
+        width: 100% !important;
+    }
+
+}
+
+
+/*
+#text {
+       width: 650px;
+       height: 100px;
+       padding: 590px;
+       padding-top: 0px;
+       padding-bottom: 0px;
+       text-align: center;
+       box-sizing: inherit;
+       border: 0px solid #FFFFFF;
+       border-radius: 0px;
+       resize: none;
+       color: #0B486B;
+       font-family: Rockwell;
+}
+*/

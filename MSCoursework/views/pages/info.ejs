@@ -1,0 +1,232 @@
+<!-- views/pages/info.ejs -->
+
+<!-- INFORMATION PAGE -->
+<!-- placeholder content only -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Information - Munro Spotter</title>
+
+    <% include ../partials/head.ejs %>
+
+    <link rel="stylesheet" href="/css/info-style.css">
+
+</head>
+
+<body>
+
+<header>
+    <% include ../partials/header.ejs %>
+</header>
+
+<main>
+    <section class="page">
+        <h2 id="PageHeader">
+            <h1 id="SiteTitle">Travel</h1>
+        </h2>
+
+        <p>All the information you need to climb the Munros.</p>
+
+        <!-- information tab buttons -->
+        <div class="tab">
+            <button class="info-tablinks" onclick="openSection(event, 'What')" id="defaultOpen">What do you need to climb?</button>
+            <button class="info-tablinks" onclick="openSection(event, 'DoDont')">Dos and Don'ts of the Munros</button>
+            <button class="info-tablinks" onclick="openSection(event, 'Safety')">Safety First!</button>
+            <button class="info-tablinks" onclick="openSection(event, 'FloraFauna')">Flora and Fauna</button>
+            <button class="info-tablinks" onclick="openSection(event, 'GetThere')">How to get there?</button>
+            <button class="info-tablinks" onclick="openSection(event, 'BeB')"> B&B and other accomodations</button>
+        </div>
+
+        <!-- What do you need to climb? - tab content -->
+        <div>
+            <div id="What" class="tabcontent">
+                <h3>What do you need to climb?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum, sem sed gravida mollis, ex mauris scelerisque quam, at vestibulum ligula turpis at massa. Aenean in interdum nulla. Integer nec faucibus diam, auctor sodales neque. Aliquam ac vestibulum urna. Vestibulum auctor finibus metus. In accumsan pellentesque dui ut auctor. Morbi sit amet lectus lobortis, aliquet velit id, aliquet dolor.</p>
+
+                <p>Donec tincidunt est sagittis vehicula imperdiet. Vivamus facilisis ipsum nisi, quis consectetur nulla aliquet et. Praesent venenatis nunc id mollis tincidunt. Suspendisse potenti. Fusce tempus rhoncus ligula, nec viverra elit imperdiet ut. Phasellus ac malesuada ante. Sed sodales ipsum eu finibus venenatis. Vestibulum porttitor augue felis, ut efficitur mi ornare eget. Praesent erat nunc, interdum et metus sed, commodo ullamcorper leo. Vestibulum finibus luctus sollicitudin. Duis euismod dignissim magna, at lacinia sem pulvinar sed. Praesent eget ligula sem. Mauris finibus augue justo, at tempor nisl ultrices vel. Ut metus enim, pretium non enim sed, tempor sodales diam.</p>
+
+                <img src="/img/equipment.png" id="Pic1"/>
+                <!--  <p>  <img src="/img/equipment2.png" id="Pic1"/> </p> -->
+
+                <p>Donec enim orci, efficitur at pharetra eget, dignissim non purus. Nulla vitae posuere sapien. In ut posuere leo. Suspendisse tristique augue eu ligula euismod, vel euismod ipsum varius. Mauris egestas et velit sed feugiat. In hendrerit ligula sem, a luctus tellus luctus sed. Duis non iaculis nisl. Fusce ultricies tempus velit, eget ornare ex mollis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ut augue eu erat pharetra vulputate quis faucibus quam. Praesent pellentesque ligula vitae ipsum congue, vel vulputate sapien venenatis. Cras lectus velit, condimentum at condimentum in, pellentesque vel eros. Duis lobortis tellus et scelerisque aliquet.</p>
+
+                <p>Proin pretium, orci eu ornare luctus, urna enim accumsan lacus, sit amet suscipit neque justo ut magna. Aliquam ac velit eu ipsum sagittis placerat et ut mauris. Nullam viverra scelerisque porta. Proin auctor consectetur commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pellentesque bibendum eros sit amet lobortis. In congue auctor malesuada. Praesent risus metus, placerat hendrerit sem vitae, ultricies elementum neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum dignissim posuere augue at viverra. Vivamus tincidunt mauris non libero maximus tempor. Integer sit amet magna lectus. Sed a nibh tortor. Nullam posuere egestas elementum.</p>
+
+                <p>Donec placerat eget massa at vulputate. Etiam egestas ipsum eu urna iaculis tincidunt. Proin ut maximus est. Nam in dignissim purus. Vivamus efficitur magna vel lorem suscipit porta. Quisque iaculis arcu sem. Donec posuere diam sit amet ornare egestas. Mauris mi ipsum, posuere eu magna at, accumsan suscipit massa.</p>
+
+
+            </div>
+            <!-- end -->
+
+            <!-- Dos and don'ts of the munros - tab content -->
+            <div id="DoDont" class="tabcontent">
+                <h3>Do and Don't of the Munros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas vestibulum diam eget ullamcorper. Aenean convallis dui et tortor viverra imperdiet. Donec consectetur, dui in tristique laoreet, ligula lectus tempus metus, eget laoreet mauris dolor a enim. Morbi gravida, ligula eu facilisis hendrerit, turpis felis laoreet urna, vehicula sollicitudin erat leo dapibus leo. Duis feugiat mi in fringilla scelerisque. Morbi rhoncus dapibus augue sed euismod. Mauris finibus, ex vel venenatis posuere, nisi mi pellentesque metus, nec posuere nisl dui vel eros. Curabitur ut massa sed enim malesuada porta. Nunc at tellus tempor, iaculis enim at, molestie dolor.</p>
+
+                <p>Vivamus a suscipit justo, sit amet viverra ligula. Duis euismod, nisi et consectetur suscipit, mauris magna maximus eros, eget gravida ipsum nibh sit amet sem. Etiam suscipit eget ex nec interdum. Nunc in sem eget massa eleifend auctor et at enim. Donec viverra posuere arcu, at egestas diam porta nec. Pellentesque cursus ex eu fermentum feugiat. Aliquam eu ante aliquet, tristique quam non, gravida orci. Nullam aliquam facilisis velit vitae rhoncus. Quisque accumsan dolor in dignissim auctor. Mauris lorem velit, porta eu metus non, fringilla suscipit lacus. Sed velit augue, volutpat sed nulla non, facilisis eleifend orci. Donec diam dolor, consectetur vitae risus at, efficitur pharetra massa. Sed ullamcorper nisl id mauris lacinia convallis.</p>
+
+                <p>Integer aliquam orci vitae tristique finibus. Ut facilisis odio sed orci porttitor hendrerit. Nulla quis molestie urna. Suspendisse pellentesque orci non turpis maximus, eu pharetra libero aliquet. Sed scelerisque ligula id iaculis commodo. Curabitur mi velit, venenatis sed turpis non, fermentum tempus quam. Sed finibus, mi at luctus dapibus, nunc lacus pellentesque tellus, nec semper mi tortor blandit nibh. Ut eu fermentum sapien. Maecenas nec finibus libero.
+
+                </p>
+
+                <img src="/img/dodont.png" id="Pic2"/>
+
+                <p>Phasellus id mollis metus, nec semper sapien. Quisque et massa eget libero aliquet eleifend et et neque. Pellentesque arcu lorem, dictum a euismod vel, ultrices vel lacus. Morbi blandit, urna id volutpat ornare, magna ante pulvinar nisl, sed ultrices mauris diam sit amet nisi. Donec auctor condimentum ipsum, quis vulputate felis condimentum et. Maecenas enim neque, ultricies ac commodo vel, luctus ac velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nisi laoreet, bibendum arcu varius, iaculis ex. Mauris egestas tristique tincidunt.
+
+                </p>
+
+
+            </div>
+            <!-- end -->
+
+            <!-- safety first - tab content-->
+            <div id="Safety" class="tabcontent">
+                <h3>Safety First!</h3>
+
+                <p>In ac venenatis nulla. Donec nec lacinia lacus, vel rutrum enim. Vivamus erat augue, imperdiet a turpis ultrices, tempus tincidunt lorem. Vestibulum massa massa, dignissim sit amet tempus sed, aliquam aliquet risus. Duis congue risus ut sem consectetur fringilla. Sed interdum viverra elementum. Proin consequat arcu odio, sed accumsan elit imperdiet bibendum. Cras mollis, lorem dapibus euismod semper, est arcu sodales augue, id hendrerit tellus mi eu lacus. Donec ut rhoncus ipsum, vitae blandit diam. Praesent a rutrum nunc.
+
+                </p>
+
+                <p>  <img src="/img/safe.jpg" id="Pic3"/>  <img src="/img/medicKit.png" id="Pic4"/> </p>
+
+                <p>Aliquam eget tortor odio. Proin ut pretium lorem. Suspendisse vel nibh et leo rutrum vestibulum luctus scelerisque sem. Etiam tincidunt, nisl eu dignissim auctor, risus augue maximus neque, vel finibus ligula dolor vestibulum magna. Etiam eget orci congue libero gravida semper. Cras sed vestibulum lorem, et interdum ante. Ut luctus, diam sed luctus cursus, mi est dignissim risus, et vestibulum nibh tellus eu mi. Suspendisse potenti. Nunc venenatis arcu et purus volutpat, ut feugiat erat tristique. Nam iaculis turpis non consectetur fringilla. Fusce convallis diam condimentum rhoncus pulvinar. Nunc ut purus odio.
+
+                </p>
+
+                <p>Sed tincidunt arcu elit, sed rhoncus orci mollis non. Nullam viverra, sapien sed condimentum tempus, lectus purus euismod ante, et egestas leo neque vel lacus. Aliquam et velit consequat, mattis odio quis, aliquet quam. Pellentesque eu tincidunt justo. Proin rutrum tincidunt libero, in dignissim mauris bibendum vitae. Proin enim sapien, porttitor et dignissim vel, lacinia sed nulla. Vivamus blandit viverra nulla vel volutpat. Cras vitae ultrices augue. Nullam lacinia, risus quis blandit mattis, ex erat interdum ligula, vitae ultrices diam sapien ut augue. Fusce sed lacinia sapien. Etiam convallis, leo ut congue ornare, odio augue auctor turpis, quis volutpat leo nulla eget metus. Maecenas nec arcu commodo, rutrum sem et, eleifend libero.
+
+                </p>
+
+
+            </div>
+            <!-- end -->
+
+            <!-- flora and fauna - tab content -->
+            <div id="FloraFauna" class="tabcontent">
+                <h3>Flora and Fauna</h3>
+
+                <p>Ut consequat gravida nibh, id eleifend lorem lacinia at. Suspendisse luctus eget arcu id varius. Morbi et libero molestie augue sagittis pharetra. Etiam consequat massa velit, at ullamcorper ante vestibulum vel. Aenean ut lacus hendrerit, eleifend metus ac, egestas nunc. Phasellus vestibulum, ex ut efficitur faucibus, tortor urna mollis ipsum, a volutpat lacus quam vitae purus. In varius urna sit amet nulla imperdiet, vitae malesuada ante mollis. Sed sed ultrices odio, quis hendrerit lorem. Cras nec accumsan quam. Proin nibh sapien, semper sit amet volutpat nec, lacinia id mi. Suspendisse non ornare nisl, pretium pulvinar risus. Duis eu scelerisque nibh, vel tincidunt urna. Etiam rutrum nisi fermentum orci porta consequat. Nullam pulvinar dictum arcu, vel mollis enim. Ut blandit et nulla sed condimentum.
+
+                </p>
+
+                <p>  <img src="/img/fauna1.jpg" id="Pic5"/> </p>
+
+                <p>Mauris egestas arcu sed tortor interdum congue. Ut vulputate gravida leo, id sodales nibh scelerisque eu. Vivamus nec ante lorem. Maecenas pulvinar mauris ut elit hendrerit, ac fringilla turpis varius. Donec libero justo, maximus in luctus vitae, facilisis nec sem. Maecenas tristique lacus justo, a dignissim urna tincidunt ac. Duis eget nulla eu lorem suscipit euismod. Nunc lacinia tellus dolor, non sodales nibh ullamcorper quis. Donec mi nisl, placerat sed sapien ac, ultricies fermentum sem. Nullam tortor risus, volutpat ac porta ac, pharetra non lorem. Vivamus nec fermentum sapien, nec malesuada felis.
+
+                </p>
+
+                <p>Mauris lobortis, ligula ut rhoncus finibus, ante purus fermentum nisl, ut accumsan lectus mauris sed neque. In vehicula augue quis mauris porta, eu accumsan enim venenatis. Nam sagittis euismod neque sed ultricies. Mauris interdum vitae nunc id ultricies. Donec iaculis sed nulla vitae auctor. Suspendisse porta finibus lacus et vulputate. Nullam accumsan eros nisi, at luctus ligula vulputate eu. Nam sodales nisl erat, et congue enim eleifend quis.
+
+                </p>
+
+
+
+                <p>  <img src="/img/flora1.jpg" id="Pic6"/> </p>
+
+                <p>Nam vulputate eget eros pulvinar pharetra. Sed nec sapien nec nunc sagittis rhoncus aliquam ac ipsum. Nullam vel sodales diam, et euismod mi. Pellentesque cursus sapien a purus lacinia, sit amet auctor sapien tempus. Suspendisse luctus, justo at ultrices euismod, turpis felis suscipit est, sit amet rutrum elit diam scelerisque nunc. Praesent diam felis, molestie eget luctus eu, placerat sit amet erat. Suspendisse eu est lectus. Duis pretium augue non eros condimentum scelerisque. Donec et ipsum diam. Ut iaculis ornare bibendum.
+
+                </p>
+
+
+            </div>
+            <!-- end -->
+
+            <!-- how to get there - tab content -->
+            <div id="GetThere" class="tabcontent">
+                <h3>How to get there?</h3>
+                <p>Maecenas eget pulvinar dui. Morbi nec quam pellentesque, consectetur lectus nec, pulvinar magna. Aenean varius tempus est a commodo. Donec rutrum mauris non ipsum tempus ultrices. Nunc leo odio, hendrerit maximus urna at, feugiat tincidunt diam. Quisque aliquam imperdiet laoreet. Nam et blandit nisl. Nulla nunc erat, vulputate sed odio sed, varius aliquam tellus. Etiam lacinia lacus sit amet leo blandit tempor. Phasellus semper molestie posuere. Maecenas interdum metus lacus, at iaculis felis pretium sit amet.
+
+                </p>
+
+                <p>Donec vulputate maximus tellus sit amet mattis. Nunc nec neque fringilla, vestibulum dui ac, sagittis arcu. Vestibulum nec consequat nisl. Vivamus maximus lorem odio. Sed sit amet faucibus magna. Aliquam velit nulla, malesuada a erat ut, tristique sagittis diam. Donec tempus massa nibh, et venenatis tortor molestie ut. Sed ut commodo nisl. Pellentesque aliquam ullamcorper vulputate. Morbi a dictum nisi. Etiam convallis nisl eget tellus fermentum, auctor dapibus ipsum hendrerit. Mauris in varius elit. Nulla consequat posuere turpis et interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas ac metus et vestibulum. Aenean lobortis rutrum tortor eget mattis.
+
+                </p>
+
+
+
+                <p>  <img src="/img/bus.jpg" class="Pic7"/> </p>
+
+                <p>Proin facilisis aliquam ipsum ac vulputate. Donec cursus rhoncus dui, id congue erat sagittis dignissim. Morbi commodo, lectus quis fermentum luctus, lacus quam posuere velit, vitae pretium diam orci et velit. Mauris luctus, odio eget sollicitudin consequat, odio magna posuere orci, vel rutrum tortor eros id mauris. Duis ultricies urna vestibulum, iaculis ex vitae, sagittis enim. Curabitur in ipsum vel nunc ullamcorper gravida a aliquet massa. Pellentesque tellus velit, rutrum id ultrices ac, rutrum nec dui. Suspendisse potenti. Ut eleifend vehicula pellentesque.
+
+                </p>
+
+
+
+                <p>  <img src="/img/car.jpg" class="Pic7"/> </p>
+
+                <p>Suspendisse ut maximus odio, at laoreet neque. Ut iaculis volutpat faucibus. Suspendisse potenti. Vestibulum condimentum, tellus in efficitur scelerisque, magna nunc aliquet nibh, non tincidunt libero ligula vitae mauris. Aliquam placerat risus dolor, nec ornare nisi tempor at. Sed justo purus, ultricies sit amet blandit et, consectetur id nulla. Quisque eget libero vel turpis facilisis gravida. Morbi malesuada ex vel mi egestas pretium. Quisque sit amet metus nec nisl tristique ullamcorper id non dolor. Mauris porttitor mauris eu velit eleifend, facilisis elementum neque convallis. Phasellus vitae velit nulla. Aliquam erat volutpat. Mauris ipsum mi, placerat et turpis interdum, dignissim scelerisque enim. Vestibulum maximus suscipit magna, non pellentesque lorem mattis vitae.
+
+                </p>
+
+
+
+                <img src="/img/walk.jpg" id="Pic8"/>
+
+                <p>Etiam congue urna ut purus iaculis varius. Aliquam id tellus vitae enim fringilla egestas a id tellus. In ullamcorper nunc turpis, at tempus nibh mollis in. Donec fermentum odio eget neque sodales efficitur. Nam consequat quam libero, sed scelerisque turpis hendrerit volutpat. Suspendisse diam erat, sodales nec augue a, rutrum condimentum lorem. Nunc vel facilisis turpis. Phasellus mattis efficitur lectus vel gravida. Nulla eget volutpat leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris mollis lectus est, nec imperdiet lectus hendrerit at. Aenean fermentum fringilla neque.
+
+                </p>
+
+                <p>Sed in nisl sed magna porta dictum eu quis eros. Sed dictum lectus turpis, eget hendrerit nulla viverra eget. Duis volutpat mi a aliquam consectetur. Nunc mattis tincidunt tortor, sed maximus quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Mauris sagittis, erat sit amet blandit dapibus, sapien velit consequat est, quis venenatis nulla elit vitae ipsum. Nam vel erat ac justo sagittis interdum at eu turpis. Sed massa orci, ullamcorper vitae mi a, hendrerit interdum felis. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio sapien, rhoncus nec mauris et, vestibulum euismod enim. Morbi porta mattis nibh, et egestas tellus. Vestibulum semper nulla nec felis ornare mollis vel quis dui. Proin fermentum turpis arcu, ac vehicula purus lobortis vitae. Cras quis sagittis libero.
+
+                </p>
+
+
+            </div>
+            <!-- end -->
+
+            <!-- B&B and other accommodation - tab content -->
+            <div id="BeB" class="tabcontent">
+                <h3>B&B and other accomodations</h3>
+                <p>Integer euismod vitae orci eget vulputate. Maecenas sed condimentum ipsum. Donec ultrices viverra porttitor. Etiam molestie enim non magna auctor, id commodo erat rutrum. Aliquam non tellus ut lacus posuere sagittis vitae in leo. Nulla luctus facilisis imperdiet. Duis varius nisl cursus leo aliquam, in interdum lectus consectetur. Quisque mattis nec nulla vitae laoreet. Ut aliquet libero vitae nulla rhoncus, nec tempus sem posuere. Vestibulum maximus vitae risus in imperdiet. Mauris faucibus, ligula eu viverra commodo, enim ligula imperdiet leo, sed iaculis massa mauris sit amet sem. Nullam consectetur eu ante id imperdiet. Curabitur sed nisi eleifend, vulputate libero in, rutrum libero. Donec leo lacus, faucibus vitae nisi facilisis, maximus posuere neque. Curabitur convallis vestibulum massa, eget varius risus ullamcorper a. Aenean commodo tincidunt libero ac pulvinar.
+
+                </p>
+
+                <p>Maecenas tincidunt semper arcu, eu auctor arcu mattis vitae. Sed congue congue tellus sit amet interdum. Etiam rhoncus ornare urna, eu hendrerit justo ornare porta. Mauris elementum ut sapien vitae ultricies. Nulla eu justo vulputate, volutpat turpis et, molestie neque. In rutrum magna ac iaculis fermentum. Curabitur vehicula quam in venenatis rhoncus.
+
+                </p>
+
+
+
+                <p>  <img src="/img/beb.jpg" id="Pic9"/> </p>
+
+                <p>Aliquam malesuada id sapien non sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non maximus mauris. Sed nulla dolor, convallis vel massa sit amet, imperdiet consequat nibh. Mauris dapibus, nisl non auctor volutpat, diam odio congue leo, quis lobortis urna justo sed tortor. Aliquam vitae pharetra est. Maecenas quis orci magna. Sed ultrices tristique felis sit amet euismod.
+
+                </p>
+
+                <p>Duis a elit at sem volutpat molestie. Fusce pellentesque in sapien nec iaculis. Phasellus at lacus malesuada, iaculis augue vitae, pulvinar enim. Donec scelerisque dolor at quam varius, in finibus enim convallis. Suspendisse euismod sollicitudin suscipit. Praesent quis neque in ligula condimentum lobortis. Donec placerat rutrum velit ac pellentesque. In fermentum nisl faucibus dui volutpat, quis vehicula diam fermentum. Nulla a sollicitudin mauris. Aenean fringilla lobortis tellus sit amet finibus. Ut ut ante laoreet, euismod lacus sit amet, auctor mi. Donec mollis non nisi at dapibus. Duis volutpat felis nec lacus efficitur, eu vulputate odio placerat. Suspendisse efficitur a mauris et malesuada.
+
+                </p>
+
+
+            </div>
+            <!-- end -->
+
+
+        </div>
+
+        <!-- div to avoid 'float' issues -->
+        <div class="clearfix"></div>
+
+    </section>
+
+
+    <!-- Login Box -->
+    <% include ../partials/loginbox.ejs %>
+
+</main>
+
+<footer>
+    <% include ../partials/footer.ejs %>
+</footer>
+
+<% include ../partials/scripts.ejs %>
+
+<!-- script for tabs -->
+<script type="text/javascript" src="/js/info-tabs.js"></script>
+
+</body>
+
+</html>

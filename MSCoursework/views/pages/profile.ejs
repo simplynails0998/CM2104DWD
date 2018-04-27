@@ -1,0 +1,80 @@
+<!-- views/pages/profile.ejs -->
+
+<!-- USER PROFILE PAGE -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Profile - Munro Spotter</title>
+
+    <% include ../partials/head.ejs %>
+
+    <!-- profile page css -->
+    <link rel="stylesheet" href="/css/profile-style.css">
+
+</head>
+
+<body>
+
+<header>
+    <% include ../partials/header.ejs %>
+</header>
+
+<main>
+    <section class="page">
+        <!-- generic profile picture -->
+        <img src="/img/profilepic.png" id="Pic"/>
+
+        <!-- user name sent with EJS -->
+        <h1 id="SiteTitle">Hello <%= user.name %></h1>
+
+
+        <!-- Munroist progress chart - Google charts -->
+        <div id="chart">
+            <!--Google Charts - Donut Chart -->
+            <div id="progress-donut"></div>
+            <!-- chart overlay -->
+            <div id="label-overlay">
+                <p id="bagged"><%= user.bagged.length %></p>
+                <p id="remaining">of 282</p>
+            </div>
+        </div>
+
+
+        <h4 id="PageList"> Munros Bagged </h4>
+
+        <div class="Content">
+
+            <!-- progress - text-based -->
+            <!-- data-test-value set using ejs to be number of bagged munros,
+              value used in JS file profilechart.js to draw chart -->
+            <p id="progress-text" data-test-value="<%= user.bagged.length %>"><%= user.bagged.length %> / 282</p>
+
+            <!-- list of bagged munros - using EJS -->
+            <ul>
+                <% user.bagged.forEach( function(munro) { %>
+                    <li><%= munro %></li>
+                <% }); %>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <% include ../partials/footer.ejs %>
+</footer>
+
+<% include ../partials/scripts.ejs %>
+
+<% var numMunros = user.bagged.length %>
+
+<!-- JAVASCRIPT FOR PROGRESS CHART (GOOGLE CHARTS) -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- Draw Chart -->
+<script type="text/javascript" src="/js/profilechart.js"></script>
+
+</body>
+
+</html>

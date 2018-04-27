@@ -1,0 +1,95 @@
+<!-- views/pages/index.ejs -->
+
+<!-- HOME PAGE -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Munro Spotter</title>
+    <% include ../partials/head.ejs %>
+</head>
+
+<body>
+
+    <header>
+        <% include ../partials/header.ejs %>
+    </header>
+
+    <main>
+        <section class="page">
+            <h1>WELCOME</h1>
+            <p>Munro Spotter is a companion app designed for those who enjoy the challenge of climbing.</p>
+
+
+            <!-- Index Content -->
+
+            <div id = "content-container">
+
+
+                <!-- Link to Map -->
+                <div class = "infolink">
+                    <a href = "/munromap">
+
+                        <div class="infoimg">
+                            <img src="/img/pins-map.png" class = "additional-info-images">
+                        </div>
+
+                        <div class="infotext">
+                            <h3>Map of Munros</h3>
+                            <p>Check the locations of all the Munros and track your progress with our interactive map. Get the latest weather updates for the mountains and filter by height to plan your next adventure.</p>
+                        </div>
+
+                    </a>
+                </div>
+
+                <!-- Link to List -->
+                <div class = "infolink">
+                    <a href = "/munrolist">
+                        <div class="infoimg">
+                            <img src="/img/schiehallion.jpg" class = "additional-info-images">
+                        </div>
+
+                        <div class="infotext">
+                            <h3>List of Munros</h3>
+                            <p>Discover more about each Munro. Login to track your "bagged" Murnos and see how close you are to becoming a Munroist.</p>
+                        </div>
+
+                    </a>
+                </div>
+
+                <!-- Link to Contact -->
+                <div class = "infolink">
+                    <a href = "/contact">
+
+                        <div class="infoimg">
+                            <img src="/img/email.png" class = "additional-info-images">
+                        </div>
+
+                        <div class="infotext">
+                            <h3>Contact Us</h3>
+                            <p>We want to here from you. Send us your feedback and questions to help us improve the website.</p>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Login Box -->
+        <% include ../partials/loginbox.ejs %>
+
+    </main>
+
+    <footer>
+        <% include ../partials/footer.ejs %>
+    </footer>
+
+    <% include ../partials/scripts.ejs %>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+
+<!--LOGIN BOX - MODAL -->
+<div id="login" class="modal">
+    <form id="login-form" class="modal-content animate" action="/dologin" method="POST">
+        <div class="imgcontainer">
+            <span onclick="closeBox('#login')" class="close" title="Close Modal">&times;</span>
+            <!--onclick="document.getElementById('login').style.display='none'"-->
+        </div>
+
+        <div class="container">
+
+            <h3 class="boxtitle">Login</h3>
+
+            <!-- enter username and password to log in -->
+            <input type="text" placeholder="Enter Username" name="username" id="login-username" required>
+            <input type="password" placeholder="Enter Password" name="password" id="login-password" required>
+
+            <!-- Display any login messages - NOT IMPLEMENTED -->
+            <p id="login-message"></p>
+
+            <button id="log-btn" class="log-btn" type="submit">Login</button>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+
+            <!-- REGISTER NEW USER LINK -->
+            <span id = "register-link" >or <a href="#" onclick="openBox('#register')">Register</a></span>
+            <div id = "popUp-bottom">
+                <button type="button" onclick="closeBox('#login')" class="cancelbtn log-btn">Cancel</button>
+
+                <!-- FORGOTTEN PASSWORD LINK -->
+                <span class="psw"><a href="#" onclick="openBox('#forgottenPassword')">Forgotten password</a></span>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- NEW USER (REGISTER) - MODAL -->
+<div id="register" class="modal">
+    <form class="modal-content animate" action="/register" method = "POST" >
+        <div class="imgcontainer">
+            <span onclick="closeBox('#register')" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+
+            <h3 class="boxtitle">Register</h3>
+
+            <!-- enter name -->
+            <input type="text" placeholder="Enter your name" name="name" required>
+
+            <!-- enter email -->
+            <input type="text" placeholder="Enter E-mail" name="email" id = "registerEmail"required>
+
+            <!-- enter username -->
+            <input type="text" placeholder="Enter a username" name="username" required>
+
+            <!-- enter password-->
+            <input type="password" placeholder="Enter Password" name="password" id = "registerPassword" required>
+
+            <!-- submit new user -->
+            <button class="log-btn" type="submit">Submit</button>
+
+            <div id = "popUp-bottom">
+                <button class="cancelbtn reset-cancel-button log-btn" type="button" onclick="closeBox('#register')" >Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- FORGOTTEN PASSWORD - MODAL -->
+<!-- DOESN'T WORK -->
+<div id="forgottenPassword" class="modal">
+    <form class="modal-content animate" action="/forgotpassword" method="GET" >
+        <div class="imgcontainer">
+            <span onclick="closeBox('#forgottenPassword')" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+
+            <h3 class="boxtitle">Forgotten Password</h3>
+
+            <!-- enter email to recover password - DOESN'T WORK -->
+            <input type="text" placeholder="Enter your E-mail" name="email" required>
+            <button class="log-btn" id = "reset-button" type="submit">Reset password</button>
+
+            <div id = "popUp-bottom">
+                <button class="cancelbtn reset-cancel-button log-btn" type="button" onclick="closeBox('#forgottenPassword')" >Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
